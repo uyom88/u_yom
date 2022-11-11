@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이력서 홈페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Zen Antique Soft", serif;
+      }
+    </style>
+
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <script src="js/jquery.js"></script>
@@ -12,11 +24,9 @@
   </head>
   <body>
     <div id="wrap">
-      <!-- 메인 -->
       <div id="main">
-        <div class="in_main">
-          <div class="header">
-            <h1 class="logo">JYY</h1>
+        <div class="main_in">
+          <header class="header">
             <ul class="nav">
               <li><a href="#">Home</a></li>
               <li><a href="#">About me</a></li>
@@ -24,30 +34,162 @@
               <li><a href="#">project1</a></li>
               <li><a href="#">finish</a></li>
             </ul>
+          </header>
+
+          <div class="mainimg">
+            <img src="./images/20221103_194843.png" alt="" width="450" />
+          </div>
+          <p class="name1">Jang Yu Young</p>
+          <p class="name2">P O R T F O L I O</p>
+        </div>
+        <!--main_in -->
+      </div>
+      <!--main -->
+
+      <div id="About_me">
+        <div class="About_me_in">
+          <div class="About_me_h">
+            <p class="About_ttl">About me</p>
+            <div class="box1"></div>
           </div>
           <img
-            class="mainimg"
-            src="./images/20221103_194843.png"
+            src="./images/KakaoTalk_20221103_151440572.jpg"
             alt=""
-            width="450"
+            width="350"
           />
-          <h2>Hello, I'm Jang Yu Young</h2>
+        </div>
+        <!-- About_me_in -->
+      </div>
+
+      <div id="skill">
+        <div class="fkill_in">
+          <div class="skill_h">
+            <p class="ttl">Skill</p>
+          </div>
+
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-name">HTML</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="75"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">CSS</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="70"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">Jquery</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="50"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="30"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">node.js</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="10"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- 프로필 -->
-      <div id="About_me">
-        <div class="inAbout_me">
-          <h1>About me</h1>
-          <div class="Aboutimg">
-            <img
-              src="./images/KakaoTalk_20221103_151440572.jpg"
-              alt=""
-              width="450"
-            />
-          </div>
-        </div>
+      <div id="Project1">
+      <div class="Project1_in">
+        <h1 class="Project1_ttl"> Project1 Project1</h1>
       </div>
     </div>
+
+
+
+   
+      <div id="Project2">
+        <p class="Project2_ttl">Project2</p>
+
+
+
+
+
+        <!-- 이메일 -->
+      </div>
+      <div id="e-mail">
+        <p class="e-mail_ttl">Thank you</p>
+        <div>
+          <form id="form">
+            <div class="field">
+              <label for="from_name">from_name</label>
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+              <label for="to_name">to_name</label>
+              <input type="text" name="to_name" id="to_name">
+            </div>
+            <div class="field">
+              <label for="message">message</label>
+              <input type="text" name="message" id="message">
+            </div>
+            <div class="field">
+              <label for="tel">tel</label>
+              <input type="text" name="tel" id="tel">
+            </div>
+            <div class="field">
+              <label for="reply_to">reply_to</label>
+              <input type="text" name="reply_to" id="reply_to">
+            </div>
+            <input type="submit" id="button" value="Send Email">
+            </form>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+              emailjs.init('3zbhBd-xzEjdbtLdt')
+
+              const btn = document.getElementById('button');
+
+              document.getElementById('form')
+                .addEventListener('submit', function (event) {
+                  event.preventDefault();
+
+                  btn.value = 'Sending...';
+
+                  const serviceID = 'service_2hblsvf';
+                  const templateID = 'template_en69e1u';
+
+                  emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                      btn.value = 'Send Email';
+                      alert('메일보내기 성공');
+                    }, (err) => {
+                      btn.value = 'Send Email';
+                      alert(JSON.stringify(err));
+                    });
+                });
+            </script>
+        </div>
+      </div>
+
+      <!-- 리모컨 -->
+      <div id="q_mn">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skill</a></li>
+          <li><a href="#">project1</a></li>
+          <li><a href="#">finish</a></li>
+          
+        </ul>
+      </div>
+    
   </body>
 </html>
