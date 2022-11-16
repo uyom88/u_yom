@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이력서 홈페이지</title>
+    <title>이력서 포트폴리오</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,27 +39,40 @@
           <div class="mainimg">
             <img src="./images/20221103_194843.png" alt="" width="450" />
           </div>
-          <p class="name1">Jang Yu Young</p>
-          <p class="name2">P O R T F O L I O</p>
+          <p class="name1">PORTFOLIO</p>
+          <p class="name2">Jang Yu Young</p>
         </div>
-        <!--main_in -->
+      
       </div>
-      <!--main -->
-
+      
+         <!-- About_me  -->
       <div id="About_me">
         <div class="About_me_in">
-          <div class="About_me_h">
             <p class="About_ttl">About me</p>
-            <div class="box1"></div>
-          </div>
+            <p class="About_txt">"안녕하세요!<br>
+            저는 긍정적인 프론트앤드 개발자 <br>
+          장유영입니다."</p>
+            <div class="box1">
+              <p>장유영
+                부경대학교 중국학과 전공
+              </p>
+            </div>
           <img
             src="./images/KakaoTalk_20221103_151440572.jpg"
             alt=""
             width="350"
           />
+          <!-- <div class="github">
+          <img  src="./images/github.png"  alt="" >
+          </div>
+          <div class="velog">
+          <img  src="./images/velog.png" alt="">
+          </div> -->
+          
         </div>
-        <!-- About_me_in -->
       </div>
+
+      <!-- skill -->
 
       <div id="skill">
         <div class="fkill_in">
@@ -107,26 +120,52 @@
       </div>
 
       <div id="Project1">
+        <!-- <h1 class="Project1_ttl"> Project1 Project1</h1> -->
       <div class="Project1_in">
-        <h1 class="Project1_ttl"> Project1 Project1</h1>
+        <div class="txt_box">
+          <p class="txt1">01.Aesop</p>
+          <p class="txt2">이솝 사이트를 클론코딩 함</p>
+          </div>
+          <div id="monitor_box">
+        <div class="box">
+          <img src="./images/monitor.png" alt=""  >
+        
+        </div>
+          <p>clone coding</p>
+
+        </div>
+        
       </div>
     </div>
 
 
 
-   
-      <div id="Project2">
-        <p class="Project2_ttl">Project2</p>
+<div id="Project2">
+  <!-- <h1 class="Project1_ttl"> Project1 Project1</h1> -->
+  <div class="Project2_in">
+    <div class="txt_box">
+      <p class="txt1">Project2</p>
+      <p class="txt2">Project2 </p>
+    </div>
+    <div id="monitor_box">
+      <div class="box">
+        <img src="./images/monitor.png" alt="">
 
+      </div>
+      <p>Project2</p>
 
+    </div>
 
+  </div>
+</div>
 
 
         <!-- 이메일 -->
-      </div>
+   
       <div id="e-mail">
         <p class="e-mail_ttl">Thank you</p>
         <div>
+         
           <form id="form">
             <div class="field">
               <label for="from_name">from_name</label>
@@ -150,6 +189,7 @@
             </div>
             <input type="submit" id="button" value="Send Email">
             </form>
+         
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
             
             <script type="text/javascript">
