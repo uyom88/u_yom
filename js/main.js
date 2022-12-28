@@ -1,3 +1,28 @@
+window.addEventListener(
+  "wheel",
+  function (e) {
+    e.preventDefault();
+  },
+  { passive: false }
+);
+
+var mHtml = $("html");
+var page = 1;
+mHtml.animate({ scrollTop: 0 });
+
+$(window).on("wheel", function (e) {
+  if (mHtml.is(":animated")) return;
+  if (e.originalEvent.deltaY > 0) {
+    if (page == 6) return;
+    page++;
+  } else if (e.originalEvent.deltaY < 0) {
+    if (page == 1) return;
+    page--;
+  }
+  var posTop = (page - 1) * $(window).height();
+  mHtml.animate({ scrollTop: posTop }, "slow");
+});
+
 $(function () {
   var menu = $(".nav > li");
   var contents = $("#wrap > div");
@@ -12,17 +37,8 @@ $(function () {
     var tt = section.offset().top;
 
     $("html, body").stop().animate({ scrollTop: tt });
-
-
-
-  
-
-
   });
 });
-
-
-
 
 // q mn
 
@@ -35,12 +51,3 @@ $(function () {
     //$("#q_mn").stop().animate({속성:"속성값", 속성:"속성값" },1000);
   });
 });
-
-
- 
-
-
-
-
-
-

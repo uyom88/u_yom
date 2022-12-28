@@ -7,14 +7,20 @@
     <title>JYY PORTFOLIO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@700&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <style>
-      * {
+      /* * {
         font-family: "Zen Antique Soft", serif;
+    
+       
       }
+      */
+      
+
     </style>
 
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
@@ -24,38 +30,54 @@
     <script src="js/skill.js"></script>
   </head>
   <body>
+
     <div id="wrap">
+      <div class="section" id="section1">
       <div id="main">
+        <div class="jyy_logo">
+          <img src="./images/logo2.png" alt="" width="450" />
+        </div>  
+
+      
         <div class="main_in">
           <header class="header">
             <ul class="nav">
               <li><a href="#">Home</a></li>
-              <li><a href="#">About me</a></li>
+              <li><a href="#">About</a></li>
               <li><a href="#">Skill</a></li>
               <li><a href="#">project1</a></li>
               <li><a href="#">finish</a></li>
             </ul>
           </header>
-
+        
           <div class="mainimg">
             <img src="./images/20221103_194843.png" alt="" width="450" />
           </div>
-          <p class="name1">PORTFOLIO</p>
+          <p class="name1">Portfolio</p>
           <p class="name2">Jang Yu Young</p>
+          
         </div>
-      
       </div>
+      </div>
+
+
+
+      
       
          <!-- About_me  -->
-      <div id="About_me">
+         <div class="section" id="section2">
+         <div id="About_me">
         <div class="About_me_in">
             <p class="About_ttl">About me</p>
             <!-- <p class="About_txt"> 이름<br>
               생년월일<br> 지역<br> 학교전공</p> -->
               <div class="About_box">
                 <p class="About_txt1"> 이름<br>
-                  생년월일<br> 지역<br> 학교전공</p>
-                <p class="About_txt2">장유영<br>94.08.08<br>부산<br>부경대학교/중국학과 </p>
+                  생년월일<br> 지역<br> 학교전공 <br> Github</p>
+                <p class="About_txt2">장유영<br>94.08.08<br>부산<br>부경대학교/중국학과</p>
+                부산 코리아IT아카데미
+                
+                UI/UX기반 프론트엔드 개발자 양성과정 수료
               </div>
             <!-- <div class="box1">
               <p>장유영
@@ -76,99 +98,232 @@
           
         </div>
       </div>
+         </div>
 
       <!-- skill -->
-
+      <div class="section" id="section3">
       <div id="skill">
-        <div class="fkill_in">
+        <div class="skill_in">
           <div class="skill_h">
             <p class="ttl">Skill</p>
           </div>
+<div class="skill_txt">
+  <ul>
+    <li class="box1">Html</li>
+    <li class="box2">Css</li>
+    <li class="box3">Jquery</li>
+    <li class="box4">Java</br>Script</li>
+    <li class="box5">Node.js</li>
+    <li class="box6">React</li>
+  </ul>
+   
+  <div class="con1 con">
+   <p> html구조를 파악하고 있으며, 레이아웃을 잡을 때 라인 정렬과 구성을 알아보기 쉽게 할 수 있습니다.</p>
+  </div>
 
-          <div class="skills">
-            <div class="skill">
-              <div class="skill-name">HTML</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="75"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-name">CSS</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="70"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-name">Jquery</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="50"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-name">JavaScript</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="30"></div>
-              </div>
-            </div>
-
-            <div class="skill">
-              <div class="skill-name">node.js</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="10"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="Project1">
-        <!-- <h1 class="Project1_ttl"> Project1 Project1</h1> -->
-      <div class="Project1_in">
-        <div class="txt_box">
-          <p class="txt1">01.Aesop</p>
-          <p class="txt2">이솝 사이트를 클론코딩 
-            왜 이사이트를 했고 어떤 기능있는지 설명
-          </p>
-          </div>
-          <div id="monitor_box">
-        <div class="box">
-          <img src="./images/monitor.png" alt=""  >
-        
-        </div>
-          <p>clone coding</p>
-
-        </div>
-        
-      </div>
-    </div>
-
-
-
-<div id="Project2">
-  <!-- <h1 class="Project1_ttl"> Project1 Project1</h1> -->
-  <div class="Project2_in">
-    <div class="txt_box">
-      <p class="txt1">Project2</p>
-      <p class="txt2">Project2 </p>
-    </div>
-    <div id="monitor_box">
-      <div class="box">
-        <img src="./images/monitor.png" alt="">
-
-      </div>
-      <p>Project2</p>
-
-    </div>
-
+  <div class="con2 con">
+    <p>css를 활용하여 컨텐츠에 효과를 주고 원하는대로 꾸밀 수 있습니다.</p>
+  </div>
+  <div class="con3 con">
+   <p>스크롤,슬라이드 이벤트등 여러 효과 동작이 가능합니다.</p>
+  </div>
+  <div class="con4 con">
+    내용 4
+    
+  </div>
+  <div class="con5 con">
+    5구조를 파악하고 있으며, 레이아웃을 잡을 때 라인 정렬과 구성을 알아보기 쉽게 할 수 있습니다.
+  </div>
+  <div class="con6 con">
+    <p>React Hooks Component State등을 이해하며 구현이 가능합니다</p>
   </div>
 </div>
 
+<div class="in_skill">
+  <ul class="skill_list">
+    <li>
+      <div>
+        <div class="in_box in_box01">95%</div>
+      </div>
+      <h5>Html</h5>
+    </li>
+    <li>
+      <div>
+        <div class="in_box in_box02">95%</div>
+      </div>
+      <h5>Css</h5>
+    </li>
+    <li>
+      <div>
+        <div class="in_box in_box03">80%</div>
+      </div>
+      <h5>Jquery</h5>
+    </li>
+    <li>
+      <li>
+        <div>
+          <div class="in_box in_box04">70%</div>
+        </div>
+        <h5>Java<br/>Script</h5>
+      </li>
+      <li>
+      <div>
+        <div class="in_box in_box05">60%</div>
+      </div>
+      <h5>Node.js</h5>
+    </li>
+    <li>
+      <div>
+        <div class="in_box in_box06">65%</div>
+      </div>
+      <h5>React</h5>
+    </li>
+  </ul>
+</div>
+        <div class="skill_img">
+          <img class="img1" src="./images/unnamed.png">
+          <img class="img2" src="./images/excel (1).png">
+          <img class="img3" src="./images/powerpoint.png">
+          <img class="img4" src="./images/word.png">
+          <img class="img5" src="./images/photoshop.png">
+          <img class="img6" src="./images/xd.png">
+        </div>
+      
+      </div>
+      </div>
+      </div>
+
+      <!-- Project1 -->
+      <div class="section" id="section4">
+      <div id="Project1">
+      <div class="Project1_in">
+  
+        <div class="txt_box">
+          <p class="txt1">01. Aesop </p>
+          <p class="txt2">
+            #html #css #js
+          </p>
+          <p class="txt3">이솝 웹사이트 클론코딩
+            디자인은 기존 웹사이트와 동일하게 구현하였으며 
+          </p>
+          <div id="circle_box">
+            <p>colors</p>
+          <div class="circle1">
+          </div>
+          <div class="circle2">
+          </div>
+          <div class="circle3">
+          </div>
+        </div>
+          <div class="btn_box">
+            <a href="https://uyom88.github.io/aesop/" class="btn1">
+              Design View
+            </a>
+            <a href="#" class="btn2">
+              Design View2
+            </a>
+          </div>
+        </div>
+    
+        <div class="flow-container">
+          <div class="flow-text">
+              <div class="flow-wrap">Project1 Project1 Project1 Project1 </div>
+              <div class="flow-wrap">Project1 Project1 Project1 Project1 </div>
+              <div class="flow-wrap">Project1 Project1 Project1 Project1</div>
+              <div class="flow-wrap">Project1 Project1 Project1 Project1 </div>
+          </div>
+      </div>
+
+           <div id="monitor_box">
+        <div class="box">
+          <div class="imac">
+  <div class="screen">
+    <div class="viewport" style="background-image:url('https://mblogthumb-phinf.pstatic.net/MjAyMjEyMjNfNTgg/MDAxNjcxNzc4NTE2NzM2.8McODTERp-L4MTbGqGKQ6AHGzdlzaSnyxzaVrjDu8csg.QVx6U7xXE6Chy6mEdH8LRuNh2ZOSCB0P9in4Uv2Ph70g.PNG.u_yom/20221223_154357.png?type=w966');">
+    </div>
+  
+  </div>  
+    <div class="logo"></div>
+    <div class="leg"></div>
+    <div class="foot"></div>
+        
+           <p>clone coding</p>
+
+      </div>
+    </div>
+        
+      </div>
+    </div>
+      </div>
+      </div>
+    
+
+      <!--Project2  -->
+
+
+      <div class="section" id="section5">
+        <div id="Project2">
+      <div class="Project2_in">
+        <div class="txt_box2">
+          <p class="txt1">02. PizzaHut </p>
+          <p class="txt2">
+            #html #css #js 
+          </p>
+          <p class="txt3">피자헛 리뉴얼 반응형 사이트 미디어쿼리를 통해 반응형으로 구현했습니다.</p>
+          <div id="circle_box2">
+            <p>colors</p>
+          <div class="circle1">
+          </div>
+          <div class="circle2">
+          </div>
+          <div class="circle3">
+          </div>
+        </div>
+          <div class="btn_box2">
+            <a href="https://uyom88.github.io/pizzahut/" class="btn1">
+              Design View
+            </a>
+            <a href="#" class="btn2">
+              Design View2
+            </a>
+          </div>
+  
+      
+          </div>
+
+        <div class="flow-container2">
+          <div class="flow-text">
+              <div class="flow-wrap">Project2 Project2 Project2 Project2 </div>
+              <div class="flow-wrap">Project2 Project2 Project2 Project2 </div>
+              <div class="flow-wrap">Project2 Project2 Project2 Project2 </div>
+              <div class="flow-wrap">Project2 Project2 Project2 Project2 </div>
+          </div>
+      </div>
+
+           <div id="monitor_box2">
+        <div class="box">
+          <div class="imac">
+  <div class="screen">
+    <div class="viewport" style="background-image:url('https://mblogthumb-phinf.pstatic.net/MjAyMjEyMjNfMTI3/MDAxNjcxNzgzNDEwNTg5.Bw8nDzTri0XZPUInu2F5aT2AbWckY44KwOBNq3BXWXwg.0tbkSVa18nyEAw99qBZEkw0FmyjPFt8O_wJIRjZtsNgg.PNG.u_yom/20221223_171231.png?type=w966');">
+    
+    </div>
+  
+  </div>  
+    <div class="logo"></div>
+    <div class="leg"></div>
+    <div class="foot"></div>
+        
+           <p>Website Renewal</p>
+
+      </div>
+    </div>
+        
+      </div>
+    </div>
+      </div>
+    </div>
 
         <!-- 이메일 -->
-   
+        <div class="section" id="section6">
       <div id="e-mail">
         <div class="e-mail_ttl">
         <h1 >
@@ -238,7 +393,9 @@
                 });
             </script>
         </div>
+        
       </div>
+        </div>
 
       <!-- 리모컨 -->
       <div id="q_mn">
