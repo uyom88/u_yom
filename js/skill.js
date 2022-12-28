@@ -62,19 +62,74 @@ $(document).ready(function () {
   });
 });
 
-   $(document).ready(function () {
-            $('.con').hide();//초기값으로 모든div숨김
-            $('.con').eq(0).show();//첫번째 div보임
+$(document).ready(function () {
+  $(".con").hide(); //초기값으로 모든div숨김
+  $(".con").eq(0).show(); //첫번째 div보임
 
-            $('.skill_txt >ul>li').click(function () {
-                var i = $(this).index();//버튼이벤트가 적용된 대상의 인덱스값
-                console.log(i)
-                //$('.con').hide();//클릭시 이전에 보이는 div모두숨김
-                $('.con').each(function () {
-                    if ($(this).show()) {//this each문에 의해서 해당되는 요소
-                        $(this).hide();//조건에 해당되는 요소숨김
-                    }
-                });
-                $('.con').eq(i).show();//인덱스값에 해당하는 div보임
-            });
-        });     
+  $(".skill_txt >ul>li").click(function () {
+    var i = $(this).index(); //버튼이벤트가 적용된 대상의 인덱스값
+    console.log(i);
+    //$('.con').hide();//클릭시 이전에 보이는 div모두숨김
+    $(".con").each(function () {
+      if ($(this).show()) {
+        //this each문에 의해서 해당되는 요소
+        $(this).hide(); //조건에 해당되는 요소숨김
+      }
+    });
+    $(".con").eq(i).show(); //인덱스값에 해당하는 div보임
+  });
+});
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    $(".img1").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 900);
+      }
+    });
+    $(".img2").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 900);
+      }
+    });
+    $(".img3").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 900);
+      }
+    });
+
+    $(".img4").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 900);
+      }
+    });
+    $(".img5").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 700);
+      }
+    });
+    $(".img6").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 700);
+      }
+    });
+  });
+});
