@@ -21,7 +21,7 @@ body {
   width: 50px;
   height: 50px;
   float: left;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 20px;
 }
 .jyy_logo img {
@@ -78,7 +78,7 @@ body {
 
 #main .name1 {
   width: 100%;
-  font-size: 110px;
+  font-size: 100px;
   box-sizing: border-box;
   position: absolute;
   top: 290px;
@@ -122,11 +122,11 @@ body {
 #main .name2 {
   width: 300px;
   height: 80px;
-  font-size: 30px;
+  font-size: 28px;
   box-sizing: border-box;
   position: absolute;
-  top: 730px;
-  left: 780px;
+  top: 738px;
+  left: 798px;
   color: #f15016;
   /* text-shadow: 3px -1px 0px #434c9b; */
   font-family: "DM Serif Display", serif;
@@ -174,7 +174,7 @@ body {
   margin: 0 auto;
   width: 400px;
   text-align: center;
-  font-size: 80px;
+  font-size: 75px;
   font-weight: bold;
   line-height: 150px;
   text-shadow: 3px 2px 0px #434c9b;
@@ -216,6 +216,11 @@ body {
   margin-left: 0px;
   border-radius: 50%;
   width: 1500px;
+}
+#About_me .About_txt2 img{
+  width: 45px;
+  margin-right: 15px;
+  margin-top: 15px;
 }
 /* #About_me .box1 {
   position: absolute;
@@ -288,7 +293,7 @@ body {
   margin: 0 auto;
   width: 400px;
   text-align: center;
-  font-size: 80px;
+  font-size: 75px;
   font-weight: bold;
   line-height: 150px;
   text-shadow: 3px 2px 0px #434c9b;
@@ -508,7 +513,7 @@ body {
   font-family: "DM Serif Display", serif;
 }
 #Project1 .txt3 {
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 50px;
   margin-bottom: 50px;
 }
@@ -801,7 +806,7 @@ body {
   float: left;
   width: 500px;
   height: 500px;
-  margin-top: 200px;
+  margin-top: 180px;
   margin-left: 350px;
   background-color: #fff;
 }
@@ -821,7 +826,7 @@ body {
   font-family: "DM Serif Display", serif;
 }
 #Project2 .txt3 {
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 50px;
   margin-bottom: 50px;
 }
@@ -1095,11 +1100,350 @@ body {
   padding-right: 1.4881vw;
   font-family: "DM Serif Display", serif;
 }
-s @keyframes textLoop {
+ @keyframes textLoop {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+/* 3 */
+
+#Project3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f7ff;
+}
+
+#Project3 .Project3_in {
+  width: 100%;
+  height: 932px;
+  align-items: center;
+  position: relative;
+}
+
+#Project3 .txt_box3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  float: left;
+  width: 500px;
+  height: 500px;
+  margin-top: 180px;
+  margin-left: 350px;
+  background-color: #fff;
+}
+
+#Project3 .txt1 {
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 40px;
+  font-family: "DM Serif Display", serif;
+}
+
+#Project3 .txt2 {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+  color: rgb(139, 138, 138);
+  font-family: "DM Serif Display", serif;
+}
+
+#Project3 .txt3 {
+  font-size: 16px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+
+#circle_box3 {
+  width: 150px;
+  height: 80px;
+  margin-left: 50px;
+}
+
+#circle_box3 p {
+  font-size: 22px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-family: "DM Serif Display", serif;
+}
+
+#circle_box3 .circle1_1 {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 6px;
+  background-color: rgb(248, 96, 13 );
+  border: 1px solid #ccc;
+}
+
+#circle_box3 .circle2_1 {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 6px;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid #ccc;
+}
+
+#circle_box3 .circle3_1 {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 1px solid #ccc;
+}
+
+#Project3 .btn1 {
+  float: left;
+  font-size: 17px;
+  width: 180px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-left: 50px;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  color: #f15016;
+  font-family: "DM Serif Display", serif;
+}
+
+#Project3 .btn1:hover {
+  transition: all 0.7s;
+  color: #fff;
+  background-color: #f15016;
+}
+
+#Project3 .btn2 {
+  float: left;
+  width: 180px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 17px;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  color: #f15016;
+  font-family: "DM Serif Display", serif;
+}
+
+#Project3 .btn2:hover {
+  transition: all 0.7s;
+  color: #fff;
+  background-color: #f15016;
+}
+
+#Project3 #monitor_box3 {
+  float: right;
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+#monitor_box3 .box {
+  width: 650px;
+  height: 540px;
+  margin-top: 150px;
+  background-color: #5558bb;
+}
+
+#monitor_box3 .box img {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  width: 900px;
+}
+
+.img1 {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#monitor_box3 p {
+  color: #d85626;
+  position: absolute;
+  font-weight: 800;
+  top: 633px;
+  left: 400px;
+  font-size: 70px;
+  animation: fadeInRight 1.2s;
+  font-family: "DM Serif Display", serif;
+}
+
+.imac {
+  padding: 4% 6%;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.screen {
+  background: #000;
+  border-radius: 3% 3% 0 0 / 5% 5% 0 0;
+
+  position: relative;
+  width: 100%;
+}
+
+.screen:before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+
+.logo {
+  background: linear-gradient(90deg, #a6a6aa, #e1e2e4);
+  border-radius: 0 0 3% 3%/ 0 0 33.33% 33.33%;
+  /* for aspect ratio */
+  position: relative;
+  width: 100%;
+}
+
+.logo:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~9:100 */
+  padding-top: 9%;
+}
+
+.leg {
+  margin: 0 auto;
+  /* for aspect ratio */
+  position: relative;
+  width: 20%;
+}
+
+.leg:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~46:100 */
+  padding-top: 46%;
+  background: linear-gradient(#7a7b80,
+      #abacaf 26%,
+      #d0d1d2 57%,
+      #f2f2f2 76%,
+      #e4e4e4 84%,
+      #787878);
+}
+
+.foot {
+  /* for aspect ratio */
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+  /* for perspective */
+  perspective: 180px;
+}
+
+.foot:before {
+  content: "";
+  display: block;
+  /* for aspect ratio ~2:5 */
+  padding-top: 40%;
+  /* for perspective */
+  transform: rotateX(68deg);
+  transform-origin: center top;
+  background: linear-gradient(#7b7b7b,
+      #7f7f7f 39%,
+      #a6a6a6 53%,
+      #ccc 67%,
+      #aaa 86%,
+      #eee 88%,
+      #fff 95%,
+      #a9a9a9 95%,
+      #000);
+  border-radius: 0 0 10% 10% / 0 0 30% 30%;
+  box-shadow: 0 -10px 5px rgba(255, 255, 255, 0.1) inset,
+    0 -17px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+.viewport {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 4%;
+  background: #333;
+}
+
+/* Screenshot Hover Scroll Additions
+  -------------------------------------------------------------- */
+
+.imac .viewport {
+  transition: background-position 3s ease;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imac:hover .viewport {
+  background-position: 0 100%;
+}
+
+.imac .viewport:after {
+  background: radial-gradient(circle at right bottom,
+      transparent 75%,
+      rgba(255, 255, 255, 0.05) 75%,
+      transparent);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.flow-text {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 200px;
+  color: #5558bb;
+  opacity: 0.1;
+}
+
+.flow-wrap {
+  animation: textLoop 20s linear infinite;
+  padding-right: 1.4881vw;
+  font-family: "DM Serif Display", serif;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
   100% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
